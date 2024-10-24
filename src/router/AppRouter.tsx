@@ -6,9 +6,9 @@ export const AppRouter = () => {
   return (
     <BrowserRouter>
       <Routes>
-          <Route path="/" element={<HymRouter />} />
+          <Route path="/hm/*" element={<HymRouter />} />
           <Route path="/auth" element={<AuthRouter />} />
-          <Route path="/*" element={<Navigate to="/"/>} />
+          <Route path="/*" element={<Navigate to="/hm"/>} />
       </Routes>
     </BrowserRouter>
   )

@@ -7,7 +7,7 @@ export const Header = ({
   setShoppingCart: React.Dispatch<React.SetStateAction<boolean>>;
 }) => {
   return (
-    <div className="w-full h-[70px]">
+    <div className="w-full h-[70px] fixed top-0 left-0 z-30 bg-white">
       <div className="flex justify-between items-center h-full px-4">
         <div className="flex items-center">
           <button onClick={() => setShoppingCart((state) => (state = false))}>
