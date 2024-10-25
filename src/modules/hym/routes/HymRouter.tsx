@@ -7,6 +7,7 @@ const DeliveryPage = lazy(() => import("../pages/DeliveryPage"));
 const LandinPage = lazy(() => import("../pages/LandinPage"));
 const NewsLetterPage = lazy(() => import("../pages/NewsLetterPage"));
 const ListProductPage = lazy(() => import("../pages/ListProductPage"));
+const ProductPage = lazy(() => import("../pages/ProductPage"));
 const StoresPage = lazy(() => import("../pages/StoresPage"));
 
 const HymRouter = () => {
@@ -51,6 +52,14 @@ const HymRouter = () => {
           element={
             <Suspense fallback="Cargando...">
               <ListProductPage />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/:id/p"
+          element={
+            <Suspense fallback="Cargando...">
+              <ProductPage />
             </Suspense>
           }
         />
